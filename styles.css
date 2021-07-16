@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  background-color: #213a21;
+}
+.upperBody {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftUpper {
+  width: 70%;
+  background-image: url(img/profie.jpg);
+  background-size: cover;
+  min-height: 550px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.leftUpper-txt {
+  /* height: 100%; */
+
+  color: #fff;
+}
+
+.leftUpper-txt h3 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px 2px rgb(16 16 16 / 57%);
+  font-weight: 900;
+}
+
+.leftUpper-txt p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.rightUpper {
+  background-image: url(img/banner1.jpg);
+  background-size: cover;
+  width: 30%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightUpper-txt {
+  color: #fff;
+}
+
+.rightUpper-txt h3 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+}
+
+.rightUpper-icons {
+  margin: auto;
+  color: #04b962c7;
+  font-size: 40px;
+}
+
+.skill {
+  padding: 20px;
+  display: flex;
+}
+
+.skill-icons {
+  height: 40px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding: 3px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px rgba(45, 141, 125, 0.8);
+  animation: move 2.5s infinite;
+}
+.skill-icons:hover {
+  transform: skewX(30deg);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-20px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.skill-text {
+  color: white;
+  padding-left: 15px;
+}
+
+.lowerBody {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftLower {
+  background-image: url(img/banner2.jpg);
+  background-size: cover;
+  width: 30%;
+  max-height: 427px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftLower-txt {
+  color: #fff;
+}
+
+.leftLower-txt h3 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+
+.leftLower-icons {
+  margin: auto;
+  color: #04b962c7;
+  font-size: 25px;
+}
+
+.hobbies {
+  padding: 20px;
+  display: flex;
+}
+
+.hobbies-icons {
+  height: 40px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding: 3px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px 10px rgba(45, 141, 125, 0.8);
+  animation: move1 2.5s infinite;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(20px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.hobbies-icons:hover {
+  transform: rotate(45deg);
+}
+
+.hobbies-text {
+  color: white;
+  padding-left: 15px;
+}
+
+.midLower {
+  background-image: url(img/banner3.jpg);
+  background-size: cover;
+  width: 40%;
+  max-height: 427px;
+  display: flex;
+  flex-direction: column;
+}
+
+.midLower-txt {
+  color: #04b962c7;
+}
+
+.midLower-txt h3 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+
+.web {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 8px 20px;
+  margin: 8px 3px;
+  border: 5px double #04b962c7;
+  border-radius: 8px;
+  color: #04b962c7;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+}
+
+.button:active {
+  transform: translateY(10px);
+}
+
+.rightLower {
+  width: 30%;
+  max-height: 427px;
+  background-image: url(img/banner4.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightLower-txt {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  /* background-color: cadetblue; */
+  color: #fff;
+  font-size: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-txt {
+  /* padding-top: 50px; */
+
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact_icon {
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  fill: #d14836;
+  margin-right: 30px;
+  transition: all 0.2s;
+}
+
+.contact_icon:hover {
+  transform: scale(1.5);
+}
+
+.ln3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.ln3 li {
+  font-size: 15px;
+  list-style: none;
+  color: #04b962c7;
+}
+
+.ln3 li span {
+  padding-left: 10px;
+  color: #fff;
+}
+
+.footer {
+  background-size: cover;
+  background-image: url(img/footer.jpg);
+}
+
+.text-footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@media (max-width: 1118px) {
+  .upperBody {
+    flex-direction: column;
+  }
+  .leftUpper {
+    width: 100%;
+    font-size: 3vw;
+  }
+  .rightUpper {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .lowerBody {
+    width: 100%;
+  }
+
+  .leftLower {
+    width: 33.33%;
+  }
+  .midLower {
+    width: 33.33%;
+  }
+  .rightLower {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 900px) {
+  .lowerBody {
+    flex-direction: column;
+  }
+
+  .leftLower {
+    width: 100%;
+    height: 400px;
+  }
+
+  .midLower {
+    width: 100%;
+
+    height: 300px;
+  }
+
+  .rightLower {
+    width: 100%;
+    height: 250px;
+  }
+  .text-footer {
+    font-size: 10px;
+  }
+}
+
+::selection {
+  background-color: rgb(43, 135, 138);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #14ffec;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  border: solid 0.2rem #212121;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0a6961;
+}

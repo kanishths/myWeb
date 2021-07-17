@@ -122,7 +122,7 @@ body {
 }
 
 .leftLower {
-  background-image: url(img/banner2.jpg);
+  background-image: url(img/footer.jpg);
   background-size: cover;
   width: 30%;
   max-height: 427px;
@@ -156,6 +156,9 @@ body {
   height: 40px;
   width: 40px;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 3px;
   margin-right: 20px;
@@ -241,9 +244,11 @@ body {
 .rightLower {
   width: 30%;
   max-height: 427px;
-  background-image: url(img/banner4.jpg);
+  /* background-image: url(img/banner2.jpg) #fff; */
+  background-color: #fff;
   background-size: cover;
   display: flex;
+  background-color: cadetblue;
   flex-direction: column;
 }
 
@@ -251,13 +256,14 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 20px;
-  /* background-color: cadetblue; */
+
   color: #fff;
   font-size: 30px;
 }
 
 .contact {
   display: flex;
+  background-color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -272,10 +278,11 @@ body {
 }
 
 .contact_icon {
-  margin-top: 50px;
+  margin-top: 50%;
+  margin-bottom: 50%;
   width: 60px;
   height: 60px;
-  fill: #d14836;
+  /* fill: #d14836; */
   margin-right: 30px;
   transition: all 0.2s;
 }
@@ -284,20 +291,16 @@ body {
   transform: scale(1.5);
 }
 
-.ln3 {
-  text-align: center;
-  padding-top: 30px;
+.icon-1 {
+  fill: #0a66c2;
 }
 
-.ln3 li {
-  font-size: 15px;
-  list-style: none;
-  color: #04b962c7;
+.icon-2 {
+  fill: #000;
 }
 
-.ln3 li span {
-  padding-left: 10px;
-  color: #fff;
+.icon-3 {
+  fill: #bc2a8d;
 }
 
 .footer {
@@ -356,16 +359,26 @@ body {
   .midLower {
     width: 100%;
 
-    height: 300px;
+    height: 400px;
   }
 
   .rightLower {
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
   }
   .text-footer {
     font-size: 10px;
   }
+}
+
+.footer__link {
+  color: #fff;
+  padding: 4px;
+}
+
+.footer__link:hover {
+  background-color: hsla(175, 83%, 23%, 0.616);
+  transform: scale(1.12) rotate(5deg);
 }
 
 ::selection {

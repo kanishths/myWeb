@@ -378,7 +378,7 @@ body {
 
 .footer__link:hover {
   background-color: hsla(175, 83%, 23%, 0.616);
-  transform: scale(1.12) rotate(5deg);
+  transform: rotate(5deg);
 }
 
 ::selection {
